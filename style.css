@@ -1,17 +1,70 @@
-
-
-#container{
-    display: flex;
+h1, h2, ul {
+    text-align: center; 
+ }
+ #banner{
+    color: #241d02;
+    background-color: #9e4c41;
+    text-align: center; 
+ }
+ #main {
+     color: #241d02;
+     background-color: #9e825d;
+ }
+ 
+ #sidebar {
+     background-color: #a99642;
+     color: #241d02;
+ }
+ #drinkbar {
+    background-color: #cb822d;
+    color: #241d02;
 }
+ 
+ #main, #sidebar, #drinkbar{
+    border-radius: 13px;
+ }
+ /* this only applies to mobile!! */
+ @media (max-width: 699px) {
+     img {
+         display: none;
+     }
+ }
+ 
 
-#main{
-    color: blue;
-    background-color: turquoise;
-    width: 30%;
-}
 
-#sidebar{
-    background-color: olivedrab;
-    color:aliceblue;
-    width: 40%;
+ /* THESE ARE DESKTOP STYLES!!! */
+ @media (min-width: 700px) {
+     #container, #banner {
+         display: flex;
+         gap: 10px;
+     }
+     #main {
+         width: 60%;
+     }
+     #sidebar {
+         width: 40%;
+     }
+     #drinkbar {
+        display: flex;
+       margin-top: 7px;
+    }
+     img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 3%;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        
+    }
+    #banner{
+        /* display: flex; */
+        text-align: center; 
+        width: 95%;
+       margin-top: 7px;
+       margin-bottom: 7px;
+       border-radius: 12px;
+       margin-left: auto;
+       margin-right: auto;
+    }
 }
