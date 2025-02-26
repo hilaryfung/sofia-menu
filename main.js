@@ -10,7 +10,6 @@ const lunchtimenote = function(){
 const discountedElements = document.querySelectorAll(".discount")
 const discounts = ["30% off!", "10% off!", "50% off!"]
 const onClickd = function() {
-
     discountedElements.forEach((element, i) => {
         element.innerHTML = discounts[i]
     })
